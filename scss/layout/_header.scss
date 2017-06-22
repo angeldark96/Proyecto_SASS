@@ -1,0 +1,20 @@
+.main-header
+{
+  background: color(azul-medio);
+  color: color(blanco);
+  display: flex;
+  padding: 0 $gutter;
+  height: pxtorem(50px);
+  line-height: pxtorem(50px);
+  font-size:1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom:1px solid rgba(color(azul-oscuro),.2);
+  z-index: z-index(overlay);
+
+}
+.cursos-page
+{
+  margin-top: 80px;
+}

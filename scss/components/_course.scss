@@ -1,0 +1,76 @@
+//El curso
+.curso-page
+{
+  margin-top:65px;
+}
+
+.course-header
+{
+  position: relative;
+  margin-bottom:3em;
+  &::before
+  {
+    content: "";
+    width: 100%;
+    height:pxtorem(40px);
+    background: rgba(#000,.5);
+    display: block;
+    position: absolute;
+    bottom: 45px;
+  }
+  &__teacher
+  {
+    padding: 0 $gutter;
+    margin-top:-50px;
+    display: flex;
+    height:pxtorem(100px);
+    position: relative;
+    z-index: 200;
+    &__img
+    {
+      width: pxtorem(100px);
+      box-shadow: 0 0 0 1px color(gris-claro);
+    }
+    &__data
+    {
+      display: flex;
+      flex-direction:column;
+      padding-left:$gutter;
+    }
+    &__ask
+    {
+      margin-top: auto;
+      display: table;
+    }
+    &__name
+
+    {
+      font-size: 1.5em;
+      color: color(blanco);
+      // Para alinear verticalmente
+      margin-top: .4em;
+      small
+      {
+        font-size: .7em;
+        display: inline-block;
+        margin-left:.5em;
+        opacity: .6;
+
+      }
+    }
+  }
+}
+
+.content
+{
+  padding: 0 $gutter;
+}
+.course-content
+{
+  &__item
+  {
+    padding:.8em 0;
+    border-bottom:1px solid color(gris-claro);
+  }
+}
+

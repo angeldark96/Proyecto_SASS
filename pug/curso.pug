@@ -1,0 +1,31 @@
+extends   template/template
+
+append config
+    -currentPage = "curso-page"
+    -title = "Sass desde Cero"
+
+block header
+    include blocks/header
+block main
+    header.course-header
+        img(src="img/course-poster.png")
+        .course-header__teacher
+            img(src="img/teacher.png").course-header__teacher__img
+            .course-header__teacher__data
+                .course-header__teacher__name Geancarlos CE
+                    small profesor
+                a(href="#").course-header__teacher__ask.button.cta Solicitar asesoría
+    .content
+        h2.content-title Contenido del Curso
+
+        .course-content
+            .icon-play.course-content__item 01 Introduccion a SASS
+            .icon-play.course-content__item 02 Sintaxis de SASS
+            .icon-play.course-content__item 03 Tipos de datos en SASS
+            .icon-play.course-content__item 04 Los mixins en SASS
+            .icon-play.course-content__item 05 Funciones en SASS
+            .icon-play.course-content__item 06 Condicionales en SASS
+            .icon-play.course-content__item 07 Iteraciones en  SASS
+            .icon-play.course-content__item 08 List y Maps a SASS
+
+

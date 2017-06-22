@@ -1,0 +1,31 @@
+//Aqui se guardan las componentes
+
+//Config
+
+@import "config";
+
+//Estilos base
+@import "base/normalize";
+@import "base/base";
+
+//Layout
+@import "layout/grid";
+@import "layout/header";
+
+
+//Modules
+@import "modules/buttons";
+@import "modules/cards";
+@import "modules/menu";
+@import "modules/tabs";
+@import "modules/icons";
+
+//Componentes
+@import "components/class";
+@import "components/course";
+@import "components/courses";
+@import "components/login";
+@import "components/questions";
+@import "components/user-profile";
+@import "components/nav";
+

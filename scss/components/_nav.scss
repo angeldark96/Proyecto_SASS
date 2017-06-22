@@ -1,0 +1,27 @@
+.main-nav
+{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 90%;
+  height: 100vh;
+  z-index: z-index(offcanvas);
+  background: color(azul-oscuro) img("logo-footer.png") no-repeat
+              left bottom /100px ;
+  &__header
+  {
+    background: color(azul-medio);
+    color: color(blanco);
+    padding: $gutter;
+  }
+  &__user
+  {
+    display: flex;
+    &__img
+    {
+      width:pxtoem(56px);
+      height:pxtoem(56px);
+      margin-right: 1em;
+    }
+  }
+}

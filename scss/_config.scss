@@ -1,0 +1,73 @@
+//Aqui se guardan las variables
+
+//Tipografia
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+//Iconos
+
+@import url(https://file.myfontastic.com/iwjSbuyEYo4upJswfzLNvb/icons.css);
+
+//Fuentes
+
+$main-font:'Ubuntu', sans-serif;
+$light:300;
+$normal:400;
+$gutter : 1em;
+
+$z-index:
+        (
+        tooltip:100,
+        modal:500,
+        overlay:700,
+        offcanvas:1000
+        );
+@function z-index($val)
+{
+  @return map_get($z-index,$val)
+}
+
+//Convertir px a em
+@function pxtoem($el,$parents:16px)
+{
+  @return ($el/$parents) * 1em;
+}
+
+
+@function pxtorem($el)
+{
+  @return ($el/16px) * 1em;
+}
+
+$font-size:pxtoem(14px);
+$h3-size:$font-size*1.15;
+$h2-size:$font-size*1.35;
+$h1-size:$font-size*1.15;
+
+
+$colors:(
+
+azul-base: #00B1F3,
+azul-oscuro: #03151F,
+azul-medio: #006BAB,
+azul-claro: #29DAFF,
+rojo: #FF3532,
+rojo-claro: #FF4946,
+gris-oscuro: #19242B,
+gris-claro: #CDCDCD,
+success: #00CB30,
+blanco: #ffffff
+
+);
+
+// Funcion para obtener color
+@function color($color){
+  @return map-get($colors,$color);
+}
+
+//Rutas de imagenes
+$path : '/img/';
+
+@function img($img)
+{
+  @return url($path + $img);
+}

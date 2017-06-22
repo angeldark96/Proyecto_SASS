@@ -1,0 +1,34 @@
+*, *::before, *::after
+{
+  box-sizing: border-box;
+}
+body
+{
+  font-size: $font-size;
+  line-height:1.5;
+  font-family:$main-font;
+  color: color(gris-oscuro);
+  margin: 0;
+}
+h1
+{
+  font-size: $h1-size;
+}
+h2
+{
+  font-size: $h2-size;
+}
+h3
+{
+  font-size: $h3-size;
+}
+h1,h2,h3
+{
+  color: color(gris-oscuro);
+  line-height:1.3;
+  font-weight: $light;
+}
+img
+{
+  max-width: 100%;
+}
