@@ -582,7 +582,7 @@ img {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  background: url("/img/home-bg.png") center/cover; }
+  background:url("/img/home-bg.png") center/cover; }
 
 .main-nav {
   position: fixed;

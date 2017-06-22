@@ -65,7 +65,7 @@ blanco: #ffffff
 }
 
 //Rutas de imagenes
-$path : '/img/';
+$path : '../img/';
 
 @function img($img)
 {
